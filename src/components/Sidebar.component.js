@@ -8,7 +8,7 @@ export default function SideBarComponent(props){
     const [getFilterValue, setFilterValue] = useState({brands:[],categories:[],types:[]});
     const [loader, setLoader] = useState(true);
 
-    const baseUrl = 'http://biprajit.pythonanywhere.com/';
+    const baseUrl = 'https://biprajit.pythonanywhere.com/';
 
     useEffect(()=>{
         axios.get(`${baseUrl}brands/`)

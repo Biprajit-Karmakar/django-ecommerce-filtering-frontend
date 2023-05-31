@@ -14,7 +14,7 @@ export default function IndexPageComponent() {
   const [selectCategory, setSelectCategory] = useState([]);
   const [selectType, setSelectType] = useState([]);
   const [productUrl, setProductUrl] = useState(
-    "http://biprajit.pythonanywhere.com/products/"
+    "https://biprajit.pythonanywhere.com/products/"
   );
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function IndexPageComponent() {
       }
 
       setProductUrl(
-        `http://biprajit.pythonanywhere.com/products/?id=&slug=&brand=${brandUrl}&category=${categoryUrl}&type=${typeUrl}&warranty=`
+        `https://biprajit.pythonanywhere.com/products/?id=&slug=&brand=${brandUrl}&category=${categoryUrl}&type=${typeUrl}&warranty=`
       );
     };
     buildRequestUrl();
